@@ -1,2 +1,0 @@
-ls  -list of files
-mkdir - create new directory
