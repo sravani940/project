@@ -1,1 +1,3 @@
-data was in html format
+ls-list of files
+cat  -it is used to print the content of the file
+mkdir -it is used to create new directory
