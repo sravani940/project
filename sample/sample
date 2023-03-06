@@ -1,0 +1,5 @@
+#!/bin/sh
+echo "enter a name : "
+read new
+echo $(mkdir $new)
+
