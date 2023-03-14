@@ -1,5 +1,93 @@
-#!/bin/sh
-echo "enter a name : "
-read new
-echo $(mkdir $new)
+1. ls    :list all the directories and files.
+       eg: ls ../linux, ../sai 
+2.mkdir  :create new directory with given name.
+       eg: mkdir sai
+3.cd     :change to directory.
+       eg:cd sai
+4.cat>filename :create file and we can write content in it and cntrl+D to save the content in the file.
+       eg:cat >file1
+          hello folks
+          welcome to cloudearl
+5.cat    :displays content of the file.
+       eg:cat file1
+          hello world
+          welocome to cloudearl
+6.ls *.txt :list all the files with given extensions.
+         eg:html.txt, hello.txt 
+7.clear   : clear the screen.
+8.vi      :text editor to write program.
+9.dd      :deletes entire line in text editor.
+10.q!     :quite the file forcefully.
+11.wq!    :save and quite the file forcefully.
+12.cp     :copy the files from one location to other.
+         eg:cp file1 file2
+ 
+
+  235  git clone https://github.com/sravani940/linux-commands.git
+  236  ls
+  237  scp -i demo1-ec2-1.pem linux-commands ubuntu@52.91.117.21:/home/ubuntu/samplefile
+  238  scp -i demo1-ec2-1.pem -r linux-commands ubuntu@52.91.117.21:/home/ubuntu/samplefile
+  239  history
+  240  ssh -i "demo1-ec2-1.pem" ubuntu@52.91.117.21
+  241  ssh -i "demo1-ec2-1.pem" ec2-user@54.147.166.61
+  242  ssh -i ubuntu@52.91.117.21
+  243  ssh -i "demo1-ec2-1.pem" ubuntu@52.91.117.21
+  244  scp -i demo1-ec2-1.pem -r demo1-ec2-1.pem ubuntu@52.91.117.21:/home/ubuntu/samplefile
+  245  ssh -i "demo1-ec2-1.pem" ubuntu@52.91.117.21
+  246  cd ..
+  247  cd Downloads
+  248  ssh  -i demo1-ec2-1.pem ubuntu@54.209.119.177
+  249  ssh -i demo1-ec2-1.pem ubuntu@54.209.119.177
+  250  ssh demo1-ec2-1.pem ubuntu@54.209.119.177
+  251  ssh -i demo1-ec2-1.pem ec2-user@54.209.119.177
+  252  scp demo1-ec2-1.pem ec2-user@54.209.119.177:/home/ec2-user
+  253  scp linux-commands ec2-user@54.209.119.177:/home/ec2-user
+  254  scp demo1-ec2-1.pem linux-commands ec2-user@54.209.119.177:/home/ec2-user
+  255  scp -rp linux-commands ec2-user@54.209.119.177:/home/ec2-user
+  256  scp -r linux-commands ec2-user@54.209.119.177:/home/ec2-user
+  257  ls
+  258  scp -rp linux-commands ec2-user@54.209.119.177:/home/ec2-user
+  259  history
+  260  ssh -i demo1-ec2-1.pem ec2-user@34.228.82.154
+  261  ssh -i demo1-ec2-1.pem ec2-user@54.209.119.177
+  262  rm -rm linux-commands
+  263  rm --rm linux-commands
+  264  rm -rf linux-commands
+
+
+
+
+
+  524  ssh -i "dev1.pem" ubuntu@52.91.118.241
+  525  cd Downloads
+  526  ssh -i "dev1.pem" ubuntu@52.91.118.241
+  527  cd Downloads
+  528  ls
+  529  ssh -i "dev1.pem" ubuntu@52.91.118.241
+  530  cd Downloads
+  531  ls
+  532  ssh -i "dev1.pem" ubuntu@52.91.118.241
+  533  scp -rp linux-commands ubuntu@52.91.118.241:/home/ubuntu
+  534  ssh -i "dev1.pem" ubuntu@52.91.118.241
+
+
+
+
+     
+  539  vi config
+  540  ssh white-jh
+  541  vi config
+  542  ssh demoec201
+  543  vi config
+  544  ssh white-jh
+  545  cd .ssh
+  546  ls
+  547  vi config
+  548  ssh white-jh
+  549  ssh demo1
+  550  ssh demoec201
+  551  scp -rp mykeypair white-jh:/home/ubuntu
+  552  ssh white-jh
+  553  ssh -rp keypair demoec201:/home/ubuntu
+  554  ssh -rp mykeypair demoec201:/home/ubuntu
 
